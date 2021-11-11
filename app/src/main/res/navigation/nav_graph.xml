@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navigationcomponent.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_nearbyWifi"
+            app:destination="@id/nearbyWifi" />
+        <action
+            android:id="@+id/action_mainFragment_to_tools"
+            app:destination="@id/tools" />
+        <action
+            android:id="@+id/action_mainFragment_to_generateQrCode"
+            app:destination="@id/generateQrCode" />
+        <action
+            android:id="@+id/action_mainFragment_to_speedTest"
+            app:destination="@id/speedTest" />
+        <action
+            android:id="@+id/action_mainFragment_to_savedWifi"
+            app:destination="@id/savedWifi" />
+    </fragment>
+    <fragment
+        android:id="@+id/nearbyWifi"
+        android:name="com.example.navigationcomponent.NearbyWifi"
+        android:label="fragment_nearby_wifi"
+        tools:layout="@layout/fragment_nearby_wifi" >
+        <action
+            android:id="@+id/action_nearbyWifi_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generateQrCode"
+        android:name="com.example.navigationcomponent.GenerateQrCode"
+        android:label="fragment_generate_qr_code"
+        tools:layout="@layout/fragment_generate_qr_code" >
+        <action
+            android:id="@+id/action_generateQrCode_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speedTest"
+        android:name="com.example.navigationcomponent.SpeedTest"
+        android:label="fragment_speed_test"
+        tools:layout="@layout/fragment_speed_test" >
+        <action
+            android:id="@+id/action_speedTest_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedWifi"
+        android:name="com.example.navigationcomponent.SavedWifi"
+        android:label="fragment_saved_wifi"
+        tools:layout="@layout/fragment_saved_wifi" >
+        <action
+            android:id="@+id/action_savedWifi_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tools"
+        android:name="com.example.navigationcomponent.Tools"
+        android:label="fragment_tools"
+        tools:layout="@layout/fragment_tools" >
+        <action
+            android:id="@+id/action_tools_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+
+
+
+
+
+
+
+<!--<ImageView-->
+<!--    android:layout_width="@dimen/_160sdp"-->
+<!--    android:layout_height="@dimen/_100sdp"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+<!--    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--    app:layout_constraintRight_toRightOf="parent"-->
+<!--    android:layout_marginTop="@dimen/_30sdp"-->
+<!--    android:id="@+id/LogoActivitymain"-->
+<!--    android:src="@drawable/ic_splash_shape"-->
+<!--    />-->
+
+
+
+
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/dataUsage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Data Usage"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/LogoActivitymain" />-->
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/searchNearbyWifi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Search Nearby Wifi"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/dataUsage" />-->
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/speedTest"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Speed Test"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/searchNearbyWifi" />-->
+
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/savedWifi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Saved Wifi"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/speedTest" />-->
+
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/tools"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tools"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/savedWifi" />-->
+
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/sharedApp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Shared App"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tools" />-->
+
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/rateUs"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Rate US"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/sharedApp" />-->
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/qrCoDe"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Qr generate"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rateUs" />-->
+
+
+<!--    <Button-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/qrScanner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Qr Scanner"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/qrCoDe" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
